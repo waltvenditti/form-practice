@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script src='basic-form-script.js' defer></script>
+    <link rel="stylesheet" href="basic-form-style.css">
+</head>
+
+<body>
+    <form id='form1' novalidate>
+        <div>
+            <p>Email Address</p>
+            <input id='email-input' class='input-field' type='email' required />
+            <p id='email-error-p' class='error-p'></p>
+        </div>
+        <div>
+            <p>Country</p>
+            <input id='country-input' required />
+            <p id='country-error-p' class='error-p'></p>
+        </div>
+        <div>
+            <p>Zip Code</p>
+            <!-- needs to be number only and 5 digits-->
+            <input id='zipcode-input' class='input-field' pattern='\d{5}' required />
+            <p id='zipcode-error-p' class='error-p'></p>
+        </div>
+        <div>
+            <p>Password</p>
+            <input type='password' id='pw1-input' minlength='8' maxlength='30' required />
+            <p id='pw1-error-p' class='error-p'></p>
+        </div>
+        <div>
+            <p>Confirm Password</p>
+            <input type='password' id='pw2-input' minlength='8' maxlength='30' required />
+            <p id='pw2-error-p' class='error-p'></p>
+        </div>
+        <div id='div-submit'>
+            <input id='submit-input' type='submit' />
+        </div>
+    </form>
+</body>
+
+</html>

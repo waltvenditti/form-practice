@@ -1,0 +1,24 @@
+p {
+    margin-bottom: 0;
+}
+
+.error-p {
+    margin-top: 0;
+    color: red;
+    
+}
+
+.error-active {
+    border: 2px solid red; 
+}
+
+#div-submit {
+    margin-top: 24px;
+}
+
+/*
+.input-field:invalid {
+    color: red;
+    border: 2px solid red; 
+}
+*/
